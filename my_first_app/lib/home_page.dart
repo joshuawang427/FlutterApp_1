@@ -35,7 +35,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                   Icon(
                     Icons.calendar_today_outlined,
-                    size:20,
+                    size:18,
                     color: color.AppColor.homePageIcons,
                   ),
                   Icon(
