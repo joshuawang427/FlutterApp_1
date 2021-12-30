@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
         backgroundColor: color.AppColor.homePageBackground,
         body: Container(
-          padding: const EdgeInsets.only(top: 70, left: 30),
+          padding: const EdgeInsets.only(top: 70, left: 30, right: 30),
           child: Column(
             children: [
               Row(
@@ -28,22 +28,24 @@ class _HomePageState extends State<HomePage> {
                       fontWeight: FontWeight.w700,
                     ),
                   ),
+                  Expanded(child: Container()),
                   Icon(
                     Icons.arrow_back_ios,
                     size: 20,
                     color: color.AppColor.homePageIcons,
                   ),
+                  SizedBox(width: 10),
                   Icon(
                     Icons.calendar_today_outlined,
-                    size:18,
+                    size: 20,
                     color: color.AppColor.homePageIcons,
                   ),
+                  SizedBox(width: 15),
                   Icon(
                     Icons.arrow_forward_ios_outlined,
-                    size:20,
+                    size: 20,
                     color: color.AppColor.homePageIcons,
                   ),
-                  
                 ],
               )
             ],
