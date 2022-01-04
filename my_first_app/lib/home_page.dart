@@ -13,43 +13,74 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: color.AppColor.homePageBackground,
-        body: Container(
-          padding: const EdgeInsets.only(top: 70, left: 30, right: 30),
-          child: Column(
-            children: [
-              Row(
-                children: [
-                  Text(
-                    'Training',
-                    style: TextStyle(
-                      fontSize: 30,
-                      color: color.AppColor.homePageTitle,
-                      fontWeight: FontWeight.w700,
-                    ),
+      backgroundColor: color.AppColor.homePageBackground,
+      body: Container(
+        padding: const EdgeInsets.only(top: 70, left: 30, right: 30),
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Text(
+                  'Training',
+                  style: TextStyle(
+                    fontSize: 30,
+                    color: color.AppColor.homePageTitle,
+                    fontWeight: FontWeight.w700,
                   ),
-                  Expanded(child: Container()),
-                  Icon(
-                    Icons.arrow_back_ios,
-                    size: 20,
-                    color: color.AppColor.homePageIcons,
+                ),
+                Expanded(child: Container()),
+                Icon(
+                  Icons.arrow_back_ios,
+                  size: 20,
+                  color: color.AppColor.homePageIcons,
+                ),
+                SizedBox(width: 10),
+                Icon(
+                  Icons.calendar_today_outlined,
+                  size: 20,
+                  color: color.AppColor.homePageIcons,
+                ),
+                SizedBox(width: 15),
+                Icon(
+                  Icons.arrow_forward_ios_outlined,
+                  size: 20,
+                  color: color.AppColor.homePageIcons,
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            Row(
+              children: [
+                Text(
+                  'Training',
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: color.AppColor.homePageSubtitle,
+                    fontWeight: FontWeight.w700,
                   ),
-                  SizedBox(width: 10),
-                  Icon(
-                    Icons.calendar_today_outlined,
-                    size: 20,
-                    color: color.AppColor.homePageIcons,
+                ),
+                Expanded(child: Container()),
+                Text(
+                  'Details',
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: color.AppColor.homePageDetail,
                   ),
-                  SizedBox(width: 15),
-                  Icon(
-                    Icons.arrow_forward_ios_outlined,
-                    size: 20,
-                    color: color.AppColor.homePageIcons,
-                  ),
-                ],
-              )
-            ],
-          ),
-        ));
+                ),
+                Icon(
+                  Icons.arrow_forward,
+                  size: 20,
+                  color: color.AppColor.homePageDetail,
+                )
+              ],
+            ),
+            Container(
+            )
+          ],
+        ),
+      ),
+    );
   }
 }
